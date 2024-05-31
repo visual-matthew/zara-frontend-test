@@ -1,0 +1,10 @@
+.favorites-counter-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    & svg {
+        color: var(--text-primary-color);
+        width: 20px;
+        height: 20px;
+    }
+}

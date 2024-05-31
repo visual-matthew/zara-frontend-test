@@ -1,0 +1,47 @@
+.card-wrapper {
+    position: relative;
+    & hr {
+        background-color: var(--secondary-color);
+        color: var(--secondary-color);  /*  This may seem like an unused style, but it's necessary for old browsers */
+        height: 5px;
+        border: 0;
+        margin: 0;
+    }
+
+    & .card-image-wrapper {
+        height: 250px;
+        display: block;
+        
+        & .card-image {
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            object-fit: cover;
+        }
+    }
+   
+
+
+    & .card-info-wrapper {
+        background-color: var(--primary-color);
+        color: var(--text-primary-color);
+        padding: 1rem 1rem 2rem 1rem;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+
+        & .character-name {
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media screen and (max-width: 819px) {
+    .card-wrapper {
+        & .card-image-wrapper {
+            height: 170px !important;
+        }
+    }
+}

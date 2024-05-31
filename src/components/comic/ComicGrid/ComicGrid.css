@@ -1,0 +1,35 @@
+:root {
+  --grid-items-per-row: 6;
+}
+
+.comic-grid-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+}
+
+.comic-grid-container::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+    border: 1px solid var(--scrollbar-background-color);
+    background-color: var(--scrollbar-background-color) ;
+  }
+
+  .comic-grid-container::-webkit-scrollbar-thumb:horizontal{
+    background: var(--secondary-color);
+    border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 1350px) {
+  :root {
+    --grid-items-per-row: 4
+  }
+ }
+
+ @media screen and (max-width: 819px) {
+  :root {
+    --grid-items-per-row: 2
+  }
+ }

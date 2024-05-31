@@ -1,0 +1,17 @@
+
+.character-single-page-comics-wrapper {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    margin-bottom: 3rem;
+
+    & .character-single-page-comics {
+        font-size: var(--text-size-l);
+    }
+}
+
+@media screen and (max-width: 819px) {
+    .character-single-page-comics-wrapper {
+        padding: 0 1rem;
+        padding-right: 0;
+    }
+}

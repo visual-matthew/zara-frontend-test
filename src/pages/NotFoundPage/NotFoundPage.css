@@ -1,0 +1,6 @@
+.not-found-page {
+    text-align: center;
+    & h1 {
+      color: var(--secondary-color);
+    }
+  }

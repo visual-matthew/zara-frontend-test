@@ -1,0 +1,15 @@
+.header-container {
+    background-color: var(--primary-color);
+    color: var(--text-primary-color);
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--header-border-bottom-color);
+}
+
+@media screen and (max-width: 819px) {
+    .header-container {
+        padding: 1rem !important;
+    }
+}

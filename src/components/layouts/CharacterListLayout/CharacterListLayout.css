@@ -1,0 +1,10 @@
+.character-list-layout {
+    padding: 3rem;
+}
+
+@media screen and (max-width: 819px) {
+    .character-list-layout {
+        padding: 1rem;
+    }
+    
+}

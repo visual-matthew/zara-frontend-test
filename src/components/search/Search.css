@@ -1,0 +1,33 @@
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    & .search-container {
+        border-bottom: 1.5px solid var(--primary-color);
+        padding: 0.5rem 0;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    
+        & input {
+            border: none;
+            width: 99%;
+    
+            &:focus {
+                outline: none;
+                box-shadow: none;
+                border-color: initial;
+            }
+    
+            &::placeholder {
+                text-transform: uppercase;
+            }
+        }
+    }
+    
+    & .search-results {
+        text-transform: uppercase;
+        font-size: var(--text-size-s)
+    }
+}

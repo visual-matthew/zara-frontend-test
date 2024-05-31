@@ -1,0 +1,11 @@
+.character-list-page {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    & .favorites-title {
+        font-size: var(--text-size-xl);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}

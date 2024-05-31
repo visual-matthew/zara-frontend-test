@@ -1,0 +1,29 @@
+:root {
+  --font-family: Roboto, sans-serif;
+  --primary-color: #000000;
+  --secondary-color: #EC1D24;
+  --text-primary-color: #FFF;
+  --text-secondary-color: #000000;
+  --scrollbar-background-color: #D9D9D9;
+  --header-border-bottom-color: #333333;
+  --text-size-s: 0.75rem;
+  --text-size-m: 1rem;
+  --text-size-l: 1.5rem;
+  --text-size-xl: 2rem;
+  --max-width: 900px;
+ }
+
+ body {
+  font-family: var(--font-family);
+ }
+
+ .card-cut {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 12px solid var(--text-primary-color);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

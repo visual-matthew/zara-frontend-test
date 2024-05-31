@@ -1,0 +1,9 @@
+.comic-card-container {
+    & .comic-image {
+        width: 179px;
+        height: 270px;
+    }
+    & .comic-title {
+        max-width: 179px;
+    }
+}

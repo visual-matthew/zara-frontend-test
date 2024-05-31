@@ -1,0 +1,5 @@
+.character-grid-container {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-items-per-row), 1fr);
+    gap: 1rem;
+}
