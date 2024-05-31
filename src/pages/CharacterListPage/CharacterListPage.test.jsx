@@ -28,7 +28,6 @@ describe('CharacterListPage', () => {
     useCharacters.mockReturnValue({ characters: [], isLoading: false });
 
     render(<CharacterListPage />);
-    screen.debug();
     expect(screen.getByPlaceholderText('Search a character...')).toBeInTheDocument();
   });
 
@@ -36,14 +35,12 @@ describe('CharacterListPage', () => {
     const characters = [{ id: 1, name: 'Spider-Man' }];
     useCharacters.mockReturnValue({ characters, isLoading: false });
     render(<CharacterListPage />);
-    screen.debug();
     expect(screen.getByTestId('character-grid')).toBeInTheDocument();
   });
   test('renders the spinner component when loading', () => {
     useCharacters.mockReturnValue({ characters: [], isLoading: true });
     mockContext.isLoading = true;
     render(<CharacterListPage />);
-    screen.debug();
     expect(screen.getByAltText('loading')).toBeInTheDocument();
   });
 

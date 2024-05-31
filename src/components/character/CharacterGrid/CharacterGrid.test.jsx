@@ -17,7 +17,6 @@ describe('CharacterGrid', () => {
   test('renders the correct number of Card components', () => {
     const characters = [{ id: 1, name: 'Spider-Man', thumbnail: { path: 'path', extension: 'jpg' } }];
     render(<CharacterGrid characters={characters} />);
-    screen.debug();
     expect(screen.getAllByTestId('card-component')).toHaveLength(characters.length);
   });
 });
