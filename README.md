@@ -15,7 +15,7 @@ To run the production server locally, follow these steps:
 2. Navigate to the project directory and run `npm install` to install all required dependencies.
 3. After the installation is complete, run `npm run build`. This command uses `vite build` to minify and prepare the code for production.
 4. Run `npm run preview`. It will start the production build locally, allowing you to preview the application in production mode. Please note that you must complete step 3 before running the production build locally or you will run into an error.
-5. Open any browser to navigate to `http`
+5. Open any browser to navigate to `http://localhost:4173/`
 
 ## Differences between starting in production mode or development mode
 ### Development mode
